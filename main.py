@@ -6,6 +6,7 @@ from discord import Intents, Client, Message
 from dotenv import load_dotenv
 
 from responses import get_response
+from setup_db import create_tables
 
 # Load the Token from somewhere safe
 load_dotenv()
@@ -60,7 +61,7 @@ async def on_message(message: Message):
     user_message: str = str(message.content)
     channel: str = str(message.channel)
 
-    if user_message[0] != "#":
+    if user_message[0] != ".":
         return
 
     print(f'[{channel}] {username}: "{user_message}"')
@@ -78,6 +79,11 @@ def get_mysql_connection():
     )
     if mydb.is_connected():
         print("Connected to MySQL!")
+
+        # Create a cursor object
+        cursor = mydb.cursor()
+        create_tables(cursor, mydb)
+
     return mydb
 
 
