@@ -34,13 +34,22 @@ A Discord bot built with discord.py for rolling dice and managing Dungeons & Dra
 
 ## Commands
 
+Use the `.` prefix to get these commands to work
+
 ### Dice Rolling
 
-- `#roll 2d6` - Rolls two six-sided dice and displays the result.
-- `#roll 4d8+2` - Rolls four eight-sided dice, adds 2 to the total, and displays the result.
+- `roll 2d6` - Rolls two six-sided dice and displays the result.
+- `roll 4d8+2` - Rolls four eight-sided dice, adds 2 to the total, and displays the result.
 
-### Character Management (Work in Progress)
+### Bag of Holding (Work in Progress)
 
+- `bag` - Displays everything in the bag of holding
+- `hold` or `add` - Adds an item to the bag of holding
+- `remove` - Removes an item from the bag of holding
+
+## Known Issues
+1. If you try to roll a dice and then subtract a modifier it won't work
+2. You can add an item several times to the bag of holding and when you remove one, it removes all instances
 
 ## Contributing
 
