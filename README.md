@@ -20,7 +20,8 @@ A Discord bot built with discord.py for rolling dice and managing Dungeons & Dra
 5. Create a new Discord bot and obtain the bot token from the Discord Developer Portal.
 6. Create a `.env` file in the project directory 
    1. Add your bot token: `DISCORD_BOT_TOKEN=your-bot-token-here`
-   _For the following, include them if you have different values to the default_
+
+   2. _For the following, include them if you have different values to the default_
    2. Add your MySQL Server host: `DB_HOST=your-host-name-here`. It will be localhost by default
    3. Add your database name: `DATABASE=your-database-name-here`. It will be dungeons_and_dragons by default
    4. Add your username: `DB_USER=your-username-here`. It will be root by default
