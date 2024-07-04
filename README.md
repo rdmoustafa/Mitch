@@ -10,7 +10,7 @@ A Discord bot built with discord.py for rolling dice and managing Dungeons & Dra
   - [Character Management (Work in Progress)](#character-management-work-in-progress)
 - [Contributing](#contributing)
 - [License](#license)
-- 
+  
 ## Installation
 
 1. Make sure you have Python 3.12 or later installed.
