@@ -7,9 +7,3 @@ def get_player_id(discord_username, mydb_connection):
     print("Getting result")
     result = cursor.fetchone()
     print("Result is", result)
-
-    # if result:
-    #     return result[0]
-    # else:
-    #     print("Player not found")
-    #     return None
